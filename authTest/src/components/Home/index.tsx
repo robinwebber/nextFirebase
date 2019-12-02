@@ -1,6 +1,9 @@
 import React from "react";
 import { NextPage, NextPageContext } from "next";
 
+// Components
+import Layout from "../Layout";
+
 type HomeProps = ComponentProps & NextProps;
 
 type ComponentProps = {
@@ -10,7 +13,12 @@ type ComponentProps = {
 type NextProps = {};
 
 const Home: NextPage<HomeProps, NextProps> = ({ userAgent }) => {
-  return <h1>Hello World - user agent: {userAgent}</h1>;
+  return (
+    <Layout>
+      <h1> Totally top secret </h1>
+      <p>user agent: {userAgent}</p>
+    </Layout>
+  );
 };
 
 Home.getInitialProps = async ({ req }: NextPageContext) => {
