@@ -4,7 +4,7 @@ import { NextPage } from "next";
 // Components
 import Layout from "../Layout";
 
-const Documents: NextPage = () => {
+const TopSecretFiles: NextPage = () => {
   return (
     <Layout>
       <h1>Super top secret documents.</h1>
@@ -13,4 +13,4 @@ const Documents: NextPage = () => {
   );
 };
 
-export default Documents;
+export default TopSecretFiles;

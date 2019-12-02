@@ -18,9 +18,9 @@ const Nav = () => (
         About
       </a>
     </Link>
-    <Link href="/documents">
-      <a style={linkStyle} title="Documents">
-        Documents
+    <Link href="/topsecretfiles">
+      <a style={linkStyle} title="Top Secret Files">
+        Top Secret Files
       </a>
     </Link>
   </div>
