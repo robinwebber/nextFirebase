@@ -22,7 +22,7 @@ const makeStore = (reducer: Reducer, initialState: AppState) => {
   return store;
 };
 
-export default (reducer: Reducer, initialState: AppState) => {
+export default (initialState: AppState) => {
   const store: IStoreType = makeStore(rootReducer, initialState);
   return store;
 };
