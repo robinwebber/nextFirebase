@@ -1,5 +1,7 @@
 import React from "react";
 import { NextPage, NextPageContext } from "next";
+import { connect } from "react-redux";
+import { AppState } from "../../redux/reducers";
 
 // Components
 import Layout from "../Layout";
@@ -26,4 +28,7 @@ Home.getInitialProps = async ({ req }: NextPageContext) => {
   return { userAgent };
 };
 
-export default Home;
+const mapStateToProps = (state: AppState) => ({
+  user: state.authReducer.user
+});
+export default connect(mapStateToProps)(Home);

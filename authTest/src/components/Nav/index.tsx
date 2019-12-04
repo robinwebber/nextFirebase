@@ -1,6 +1,5 @@
 // import React from "react";
 import Link from "next/link";
-import { link } from "fs";
 
 const linkStyle = {
   marginRight: 15

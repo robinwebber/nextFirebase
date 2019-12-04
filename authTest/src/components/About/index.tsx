@@ -1,5 +1,7 @@
 import React from "react";
 import { NextPage } from "next";
+import { connect } from "react-redux";
+import { AppState } from "../../redux/reducers";
 
 // Components
 import Layout from "../Layout";
@@ -12,4 +14,8 @@ const About: NextPage = () => {
   );
 };
 
-export default About;
+const mapStateToProps = (state: AppState) => ({
+  user: state.authReducer.user
+});
+
+export default connect(mapStateToProps)(About);

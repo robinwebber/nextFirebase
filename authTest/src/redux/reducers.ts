@@ -1,9 +1,11 @@
 import { combineReducers } from "redux";
 
 import topSecretFilesReducer from "./modules/topSecretFiles/reducer";
+import authReducer from "./modules/auth/reducer";
 
 const combinedReducers: any = combineReducers({
-  topSecretFilesReducer
+  topSecretFilesReducer,
+  authReducer
 });
 
 export default combinedReducers;
